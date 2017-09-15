@@ -331,7 +331,9 @@ key_bindings:
   - { key: V, mods: Command, action: Paste }
   - { key: Period, mods: Alt, chars: "\x1b." }
   - { key: T, mods: Alt, chars: "\x1bt" }
-
+  - { key: Key0,     mods: Control, action: ResetFontSize                }
+  - { key: Equals,   mods: Control, action: IncreaseFontSize             }
+  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
 
 # Mouse bindings
 #
