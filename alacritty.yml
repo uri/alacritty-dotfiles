@@ -109,62 +109,62 @@ render_timer: false
 custom_cursor_colors: false
 
 # Colors (Snazzy)
-colors:
-  # Default colors
-  primary:
-    background: '0x282a36'
-    foreground: '0xeff0eb'
-
-  # Normal colors
-  normal:
-    black:   '0x282a36'
-    red:     '0xff5c57'
-    green:   '0x5af78e'
-    yellow:  '0xf3f99d'
-    blue:    '0x57c7ff'
-    magenta: '0xff6ac1'
-    cyan:    '0x9aedfe'
-    white:   '0xf1f1f0'
-
-  # Bright colors
-  bright:
-    black:   '0x686868'
-    red:     '0xff5c57'
-    green:   '0x5af78e'
-    yellow:  '0xf3f99d'
-    blue:    '0x57c7ff'
-    magenta: '0xff6ac1'
-    cyan:    '0x9aedfe'
-    white:   '0xf1f1f0'
-
-# Colors (Solarized Light)
 # colors:
 #   # Default colors
 #   primary:
-#     background: '0xfdf6e3'
-#     foreground: '0x586e75'
+#     background: '0x282a36'
+#     foreground: '0xeff0eb'
 
 #   # Normal colors
 #   normal:
-#     black:   '0x073642'
-#     red:     '0xdc322f'
-#     green:   '0x859900'
-#     yellow:  '0xb58900'
-#     blue:    '0x268bd2'
-#     magenta: '0xd33682'
-#     cyan:    '0x2aa198'
-#     white:   '0xeee8d5'
+#     black:   '0x282a36'
+#     red:     '0xff5c57'
+#     green:   '0x5af78e'
+#     yellow:  '0xf3f99d'
+#     blue:    '0x57c7ff'
+#     magenta: '0xff6ac1'
+#     cyan:    '0x9aedfe'
+#     white:   '0xf1f1f0'
 
 #   # Bright colors
 #   bright:
-#     black:   '0x002b36'
-#     red:     '0xcb4b16'
-#     green:   '0x586e75'
-#     yellow:  '0x657b83'
-#     blue:    '0x839496'
-#     magenta: '0x6c71c4'
-#     cyan:    '0x93a1a1'
-#     white:   '0xfdf6e3'
+#     black:   '0x686868'
+#     red:     '0xff5c57'
+#     green:   '0x5af78e'
+#     yellow:  '0xf3f99d'
+#     blue:    '0x57c7ff'
+#     magenta: '0xff6ac1'
+#     cyan:    '0x9aedfe'
+#     white:   '0xf1f1f0'
+
+# Colors (Solarized Light)
+colors:
+  # Default colors
+  primary:
+    background: '0xfdf6e3'
+    foreground: '0x586e75'
+
+  # Normal colors
+  normal:
+    black:   '0x073642'
+    red:     '0xdc322f'
+    green:   '0x859900'
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0xd33682'
+    cyan:    '0x2aa198'
+    white:   '0xeee8d5'
+
+  # Bright colors
+  bright:
+    black:   '0x002b36'
+    red:     '0xcb4b16'
+    green:   '0x586e75'
+    yellow:  '0x657b83'
+    blue:    '0x839496'
+    magenta: '0x6c71c4'
+    cyan:    '0x93a1a1'
+    white:   '0xfdf6e3'
 
 # Material
 # colors:
@@ -507,6 +507,7 @@ key_bindings:
   - { key: Insert,                  chars: "\x1b[2~"                     }
   - { key: Delete,                  chars: "\x1b[3~"                     }
   - { key: Space,    mods: Control, chars: "\x00"                        }
+  - { key: Q, mods: Control, chars: "\x11" }
   - { key: A,         mods: Alt,       chars: "\x1ba"                       }
   - { key: B,         mods: Alt,       chars: "\x1bb"                       }
   - { key: C,         mods: Alt,       chars: "\x1bc"                       }
@@ -593,4 +594,5 @@ key_bindings:
   - { key: Key0,     mods: Command, action: ResetFontSize                }
   - { key: Equals,   mods: Command, action: IncreaseFontSize             }
   - { key: Minus, mods: Command, action: DecreaseFontSize             }
+  - { key: N,        mods: Command, command: { program: "open", args: ["-nb", "io.alacritty"] } }
 
